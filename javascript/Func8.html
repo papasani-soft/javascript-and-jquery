@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Document</title>
+ </head>
+ <body>
+ <script>
+  var person={
+	"firstName":"anji",
+	"lastName":"papasani",
+	"getFullName":function(){
+	//return person.firstName+" "+person.lastName;
+	return this.firstName+" "+this.lastName;
+	},
+	"address":{
+	"street":"123 JS street",
+	"city":"JS",
+	"state":"CA"
+	},
+	"isFromState":function(state)
+	  {
+		  return (this.address.state===state);
+	  }
+};
+
+
+
+console.log(person.isFromState("Cs"));
+</script>
+ </body>
+</html>

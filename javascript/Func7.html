@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Document</title>
+ </head>
+ <body>
+  <script>
+var person={
+	"firstName":"anji",
+	"lastName":"papasani",
+	"getFullName":function(){
+	//return person.firstName+" "+person.lastName;
+	return this.firstName+" "+this.lastName;
+
+	}
+};
+var fullName=person.getFullName();
+
+var person2=person;
+person={};
+console.log(person2.getFullName());
+//console.log(fullName);
+ 
+ 
+  </script>
+ </body>
+</html>
